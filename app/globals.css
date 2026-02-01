@@ -10,6 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Squirrel theme colors */
+  --color-acorn: #8B4513;
+  --color-acorn-light: #D2691E;
+  --color-forest: #228B22;
+  --color-bark: #3E2723;
+  --color-cream: #FFF8DC;
+  --color-leaf: #6B8E23;
+
+  /* Conservation status colors */
+  --color-status-lc: #22c55e;
+  --color-status-nt: #eab308;
+  --color-status-vu: #f97316;
+  --color-status-en: #ef4444;
+  --color-status-ce: #991b1b;
 }
 
 @media (prefers-color-scheme: dark) {

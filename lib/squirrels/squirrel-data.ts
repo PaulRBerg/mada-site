@@ -1,0 +1,373 @@
+import type { Squirrel } from "./squirrel.types";
+
+export const squirrels: Squirrel[] = [
+  // Tree Squirrels
+  {
+    id: "eastern-gray-squirrel",
+    commonName: "Eastern Gray Squirrel",
+    scientificName: "Sciurus carolinensis",
+    category: "tree-squirrel",
+    regions: ["north-america", "europe"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [23, 30],
+      tailLengthCm: [19, 25],
+      weightGrams: [400, 600],
+      lifespan: 12,
+      diet: ["nuts", "seeds", "fruits", "fungi", "bark"],
+      habitat: ["deciduous-forest", "urban"],
+      activity: "diurnal",
+      hibernates: false,
+      canGlide: false,
+    },
+    description:
+      "One of the most widespread and adaptable squirrels, thriving in both forests and urban environments.",
+    funFact:
+      "They bury thousands of nuts each fall but forget where they put many of them, accidentally planting trees.",
+    color: "gray",
+  },
+  {
+    id: "fox-squirrel",
+    commonName: "Fox Squirrel",
+    scientificName: "Sciurus niger",
+    category: "tree-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [25, 38],
+      tailLengthCm: [20, 33],
+      weightGrams: [500, 1000],
+      lifespan: 18,
+      diet: ["nuts", "seeds", "insects", "eggs"],
+      habitat: ["deciduous-forest", "urban"],
+      activity: "diurnal",
+      hibernates: false,
+      canGlide: false,
+    },
+    description:
+      "The largest tree squirrel in North America, with highly variable coloration across its range.",
+    funFact:
+      "Unlike most squirrels, fox squirrels spend considerable time foraging on the ground.",
+    color: "brown",
+  },
+  {
+    id: "american-red-squirrel",
+    commonName: "American Red Squirrel",
+    scientificName: "Tamiasciurus hudsonicus",
+    category: "tree-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [16, 23],
+      tailLengthCm: [10, 16],
+      weightGrams: [200, 280],
+      lifespan: 8,
+      diet: ["seeds", "fungi", "fruits", "eggs"],
+      habitat: ["coniferous-forest"],
+      activity: "diurnal",
+      hibernates: false,
+      canGlide: false,
+    },
+    description:
+      "A small, fiercely territorial squirrel known for its loud chattering calls and aggressive defense of food caches.",
+    funFact:
+      "They create large piles of cone scales called middens that can be used for generations.",
+    color: "red",
+  },
+  {
+    id: "eurasian-red-squirrel",
+    commonName: "Eurasian Red Squirrel",
+    scientificName: "Sciurus vulgaris",
+    category: "tree-squirrel",
+    regions: ["europe", "asia"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [19, 23],
+      tailLengthCm: [15, 20],
+      weightGrams: [250, 340],
+      lifespan: 7,
+      diet: ["seeds", "nuts", "fungi", "fruits", "bark"],
+      habitat: ["coniferous-forest", "deciduous-forest"],
+      activity: "diurnal",
+      hibernates: false,
+      canGlide: false,
+    },
+    description:
+      "An iconic European species recognized by its distinctive ear tufts that grow longer in winter.",
+    funFact:
+      "Their coat color varies from red to almost black depending on location and season.",
+    color: "red",
+  },
+  {
+    id: "japanese-squirrel",
+    commonName: "Japanese Squirrel",
+    scientificName: "Sciurus lis",
+    category: "tree-squirrel",
+    regions: ["asia"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [16, 22],
+      tailLengthCm: [13, 17],
+      weightGrams: [250, 310],
+      lifespan: 8,
+      diet: ["nuts", "seeds", "fruits", "fungi"],
+      habitat: ["deciduous-forest", "urban"],
+      activity: "diurnal",
+      hibernates: false,
+      canGlide: false,
+    },
+    description:
+      "Endemic to Japan, this squirrel develops prominent ear tufts similar to its Eurasian cousin.",
+    funFact:
+      "They are one of the few squirrel species to have a white belly year-round.",
+    color: "brown",
+  },
+
+  // Ground Squirrels
+  {
+    id: "california-ground-squirrel",
+    commonName: "California Ground Squirrel",
+    scientificName: "Otospermophilus beecheyi",
+    category: "ground-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [26, 30],
+      tailLengthCm: [13, 20],
+      weightGrams: [280, 740],
+      lifespan: 6,
+      diet: ["seeds", "nuts", "fruits", "insects", "eggs"],
+      habitat: ["grassland"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "A common sight in western North America, often seen standing upright on hind legs to survey for predators.",
+    funFact:
+      "They chew on shed rattlesnake skins and lick themselves to mask their scent from predators.",
+    color: "brown",
+  },
+  {
+    id: "arctic-ground-squirrel",
+    commonName: "Arctic Ground Squirrel",
+    scientificName: "Urocitellus parryii",
+    category: "ground-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [24, 33],
+      tailLengthCm: [8, 12],
+      weightGrams: [500, 800],
+      lifespan: 10,
+      diet: ["seeds", "fruits", "insects"],
+      habitat: ["alpine"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "The only ground squirrel found in the Arctic, with remarkable adaptations for extreme cold.",
+    funFact:
+      "During hibernation, their body temperature drops below freezing to -3 degrees C, the lowest of any mammal.",
+    color: "brown",
+  },
+  {
+    id: "european-ground-squirrel",
+    commonName: "European Ground Squirrel",
+    scientificName: "Spermophilus citellus",
+    category: "ground-squirrel",
+    regions: ["europe"],
+    status: "vulnerable",
+    characteristics: {
+      bodyLengthCm: [18, 23],
+      tailLengthCm: [5, 7],
+      weightGrams: [200, 430],
+      lifespan: 6,
+      diet: ["seeds", "insects"],
+      habitat: ["grassland"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "A social species that lives in colonies and communicates through various alarm calls.",
+    funFact:
+      "They hibernate for up to 8 months of the year, one of the longest hibernation periods of any rodent.",
+    color: "brown",
+  },
+
+  // Flying Squirrels
+  {
+    id: "northern-flying-squirrel",
+    commonName: "Northern Flying Squirrel",
+    scientificName: "Glaucomys sabrinus",
+    category: "flying-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [12, 15],
+      tailLengthCm: [11, 14],
+      weightGrams: [75, 140],
+      lifespan: 6,
+      diet: ["fungi", "nuts", "seeds", "insects", "eggs"],
+      habitat: ["coniferous-forest"],
+      activity: "nocturnal",
+      hibernates: false,
+      canGlide: true,
+    },
+    description:
+      "A nocturnal glider that uses a membrane of skin between its legs to travel between trees.",
+    funFact:
+      "Their fur fluoresces bright pink under ultraviolet light, though scientists are unsure why.",
+    color: "brown",
+  },
+  {
+    id: "southern-flying-squirrel",
+    commonName: "Southern Flying Squirrel",
+    scientificName: "Glaucomys volans",
+    category: "flying-squirrel",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [12, 14],
+      tailLengthCm: [8, 12],
+      weightGrams: [45, 82],
+      lifespan: 5,
+      diet: ["nuts", "seeds", "fruits", "insects", "eggs"],
+      habitat: ["deciduous-forest"],
+      activity: "nocturnal",
+      hibernates: false,
+      canGlide: true,
+    },
+    description:
+      "The smallest squirrel in eastern North America, highly social and often nesting in groups during winter.",
+    funFact:
+      "They can glide over 45 meters in a single leap and make 90-degree turns mid-flight.",
+    color: "gray",
+  },
+  {
+    id: "japanese-giant-flying-squirrel",
+    commonName: "Japanese Giant Flying Squirrel",
+    scientificName: "Petaurista leucogenys",
+    category: "flying-squirrel",
+    regions: ["asia"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [25, 50],
+      tailLengthCm: [28, 41],
+      weightGrams: [700, 1500],
+      lifespan: 15,
+      diet: ["fruits", "seeds", "nuts", "bark"],
+      habitat: ["deciduous-forest"],
+      activity: "nocturnal",
+      hibernates: false,
+      canGlide: true,
+    },
+    description:
+      "One of the largest flying squirrels in the world, endemic to Japan with distinctive white cheek patches.",
+    funFact:
+      "They can glide distances of up to 160 meters between trees using their large patagium membrane.",
+    color: "gray",
+  },
+
+  // Chipmunks
+  {
+    id: "eastern-chipmunk",
+    commonName: "Eastern Chipmunk",
+    scientificName: "Tamias striatus",
+    category: "chipmunk",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [13, 19],
+      tailLengthCm: [8, 11],
+      weightGrams: [66, 150],
+      lifespan: 8,
+      diet: ["nuts", "seeds", "fruits", "fungi", "insects"],
+      habitat: ["deciduous-forest"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "A small, striped rodent known for its expandable cheek pouches used to transport food to underground burrows.",
+    funFact:
+      "Their cheek pouches can expand to three times the size of their head when full of food.",
+    color: "brown",
+  },
+  {
+    id: "siberian-chipmunk",
+    commonName: "Siberian Chipmunk",
+    scientificName: "Eutamias sibiricus",
+    category: "chipmunk",
+    regions: ["asia", "europe"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [12, 17],
+      tailLengthCm: [8, 11],
+      weightGrams: [50, 150],
+      lifespan: 5,
+      diet: ["seeds", "nuts", "fruits", "insects"],
+      habitat: ["coniferous-forest"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "The only chipmunk found outside North America, naturally occurring across northern Asia.",
+    funFact:
+      "Escaped pets have established invasive populations across Europe, where they can carry Lyme disease.",
+    color: "brown",
+  },
+
+  // Marmots
+  {
+    id: "alpine-marmot",
+    commonName: "Alpine Marmot",
+    scientificName: "Marmota marmota",
+    category: "marmot",
+    regions: ["europe"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [42, 54],
+      tailLengthCm: [13, 16],
+      weightGrams: [3000, 8000],
+      lifespan: 18,
+      diet: ["seeds", "insects"],
+      habitat: ["alpine"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "A large, social rodent living in family groups in the high Alps, known for its distinctive warning whistle.",
+    funFact:
+      "Entire families huddle together during their 6-month hibernation, with adults warming juveniles.",
+    color: "brown",
+  },
+  {
+    id: "groundhog",
+    commonName: "Groundhog",
+    scientificName: "Marmota monax",
+    category: "marmot",
+    regions: ["north-america"],
+    status: "least-concern",
+    characteristics: {
+      bodyLengthCm: [40, 65],
+      tailLengthCm: [15, 25],
+      weightGrams: [2000, 6300],
+      lifespan: 6,
+      diet: ["seeds", "fruits"],
+      habitat: ["grassland"],
+      activity: "diurnal",
+      hibernates: true,
+      canGlide: false,
+    },
+    description:
+      "Also known as the woodchuck, this solitary marmot is one of the few that prefers lowland habitats.",
+    funFact:
+      "Despite the famous tongue-twister, woodchucks rarely chuck wood—though they can move 35 cubic feet of dirt digging a burrow.",
+    color: "brown",
+  },
+];
